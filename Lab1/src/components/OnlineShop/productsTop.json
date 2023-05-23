@@ -1,0 +1,41 @@
+[
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/cup1.webp",
+    "title": "Чашки з котами",
+    "cost": "74 ₴"
+  },
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/cup2.webp",
+    "title": "Немає в наявності",
+    "cost": "19 ₴",
+    "inStock": "Немає в наявності"
+  },
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/cup3.webp",
+    "title": "Чашки з єнотами",
+    "cost": "64 ₴",
+    "inStock": "Немає в наявності"
+  },
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/cup4.webp",
+    "title": "Біла чашка",
+    "cost": "23 ₴"
+  },
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/cup5.webp",
+    "title": "Чорна чашка",
+    "cost": "69 ₴",
+    "inStock": "Немає в наявності"
+  },
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/cup6.webp",
+    "title": "Чашки з котами",
+    "cost": "50 ₴"
+  }
+]

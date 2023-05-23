@@ -1,0 +1,49 @@
+[
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/glass1.jpg",
+    "title": "Вайфаєри М1",
+    "cost": "6.200 ₴",
+    "sale": "3.500 ₴"
+  },
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/glass2.jpg",
+    "title": "Вайфаєри М2 ",
+    "cost": "5.000 ₴",
+    "inStock": "Нема в наявності",
+    "sale": "2.000 ₴"
+  },
+
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/glass3.jpg",
+    "title": "Тішейди",
+    "cost": "11.000 ₴",
+    "inStock": "out of stock",
+    "sale": "5.000 ₴"
+  },
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/glass4.jpg",
+    "title": "Авіатори",
+    "cost": "2.999 ₴",
+    "inStock": "out of stock",
+    "sale": "1.000 ₴"
+  },
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/glass5.jpg",
+    "title": " Броулайнери",
+    "cost": "4.000 ₴",
+    "inStock": "out of stock",
+    "sale": "3.000 ₴"
+  },
+  {
+    "heart": "./images/heart.png",
+    "image": "./images/glass6.jpg",
+    "title": "Вайфаєри М3",
+    "cost": "6.500 ₴",
+    "sale": "4.000 ₴"
+  }
+]
