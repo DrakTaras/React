@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -9,25 +8,30 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Product from './Product';
 
-function Cart(props) {
-    let initialQuantity = 0, initialTotalPrice = 0;
+const Cart = (props) => {
+    let initialQuantity = 0;
+    let initialTotalPrice = 0;
+
     props.products.forEach(function (product) {
         if (product.min) {
             initialQuantity += product.min;
             initialTotalPrice += product.min * product.price;
         }
-    })
+    });
+    
     const [quantity, setQuantity] = useState(initialQuantity);
     const [totalPrice, setTotalPrice] = useState(initialTotalPrice);
-
+    
     const changeQuantity = (number) => {
         setQuantity(quantity + number);
-    }
+    };
+    
     const changePrice = (price) => {
         setTotalPrice(totalPrice + price);
-    }
+    };
+    
     return (
-        <div >
+        <div>
             <h1>{props.nameTask}</h1>
             <TableContainer className='tableClass' align="center" component={Paper}>
                 <Table sx={{ maxWidth: 650 }} aria-label="a dense table">
@@ -40,17 +44,11 @@ function Cart(props) {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {props.products.map((product, index) => {
-                            return (
-                                <TableRow
-                                    key={index}
-                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                >
-                                    <Product product={product} changeQuantity={changeQuantity} changePrice={changePrice} />
-                                </TableRow>
-                            )
-                        })
-                        }
+                        {props.products.map((product, index) => (
+                            <TableRow key={index} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                                <Product product={product} changeQuantity={changeQuantity} changePrice={changePrice} />
+                            </TableRow>
+                        ))}
                         <TableRow>
                             <TableCell sx={{ fontWeight: "bold" }}>Totals</TableCell>
                             <TableCell align="right"></TableCell>
@@ -61,7 +59,8 @@ function Cart(props) {
                 </Table>
             </TableContainer>
         </div>
-    )
+    );
+    
 }
 
 export default Cart;

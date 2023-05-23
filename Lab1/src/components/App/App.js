@@ -1,13 +1,27 @@
-import Table from "../Table/Table";
-import OnlineShop from "../OnlineShop/OnlineShop";
-import Cities from "../Cities/Cities";
-import Technique from "../Technique/technique";
-import Color from "../Color/Color";
-
+import Table from '../Table/Table';
+import OnlineShop from '../OnlineShop/OnlineShop';
+import Cities from '../Cities/Cities';
+import Technique from '../Technique/technique';
+import Color from '../Color/Color';
 
 const App = () => {
-	const name1 = "Product1";
-	const name2 = "Product2";
+  const name1 = 'Product1';
+  const name2 = 'Product2';
+
+  const cities = [
+    {
+      id: 1,
+      name: 'Chicago',
+    },
+    {
+      id: 2,
+      name: 'Los Angeles',
+    },
+    {
+      id: 3,
+      name: 'New York',
+    },
+  ];
 
   return (
     <div>
@@ -18,24 +32,9 @@ const App = () => {
       <OnlineShop />
       <h2>Task5</h2>
       <Cities cities={cities} />
-	  <Color/>	  
+      <Color />
     </div>
   );
-}; 	
-
-const cities = [
-  {
-    id: 1,
-    name: "Chicago",
-  },
-  {
-    id: 2,
-    name: "Los Angeles",
-  },
-  {
-    id: 3,
-    name: "New York",
-  },
-];
+};
 
 export default App;

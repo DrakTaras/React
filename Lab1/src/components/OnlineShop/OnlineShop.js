@@ -1,5 +1,5 @@
 import data from "./productsTop.json";
-import data2 from "./products.Bottom.json";
+import data2 from "./productsBottom.json";
 import "./onlineShop.css";
 
 const OnlineShop = () => {
@@ -13,25 +13,26 @@ const OnlineShop = () => {
     </div>
   );
 };
+
 const ProductsTop = () => {
   return (
     <div>
-      <div class="Cups">
+      <div className="Cups">
         {data.map((item) => (
-          <div class="catalog">
+          <div className="catalog" key={item.id}>
             <div>
-              <img src={require(`${item.heart}`)} class="heartImg" alt="" />
+              <img src={require(`${item.heart}`)} className="heartImg" alt="" />
             </div>
             <div>
-              <img src={require(`${item.image}`)} alt=""></img>
+              <img src={require(`${item.image}`)} alt="" />
             </div>
-            <div class="catalog__title">
+            <div className="catalog__title">
               <p>{item.title}</p>
             </div>
             <div>
               <p>{item.cost}</p>
             </div>
-            <div class="inStock">
+            <div className="inStock">
               <p>{item.inStock}</p>
             </div>
           </div>
@@ -43,22 +44,22 @@ const ProductsTop = () => {
 
 const ProductsBottom = () => {
   return (
-    <div class="Glass">
+    <div className="Glass">
       {data2.map((item) => (
-        <div class="catalog">
+        <div className="catalog" key={item.id}>
           <div>
-            <img src={require(`${item.heart}`)} class="heartImg" alt="" />
+            <img src={require(`${item.heart}`)} className="heartImg" alt="" />
           </div>
           <div>
-            <img src={require(`${item.image}`)} alt=""></img>
+            <img src={require(`${item.image}`)} alt="" />
           </div>
-          <div class="catalog__title">
+          <div className="catalog__title">
             <p>{item.title}</p>
           </div>
-          <div class="bottomCost">
+          <div className="bottomCost">
             <p>{item.cost}</p>
           </div>
-          <div class="sale">
+          <div className="sale">
             <p>{item.sale}</p>
           </div>
         </div>
